@@ -1,0 +1,29 @@
+.btn {
+  padding: 10px;
+  color: #fff;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.btn--primary {
+  background-color: purple;
+}
+.btn--secondary {
+  background-color: white;
+  color: #000;
+  border: 1px solid grey;
+}
+.btn--success {
+  background-color: green;
+}
+.btn--info {
+  background-color: blue;
+}
+.btn--warning {
+  background-color: orange;
+}
+.btn--danger {
+  background-color: red;
+}
+
+/*# sourceMappingURL=style.css.map */
