@@ -11,7 +11,7 @@
     &--secondary{
         background-color:white;
         color: #000;
-        border: 1px solid grey;
+        border: 1px solid lightgrey;
     }
     &--success{
         background-color:green;
@@ -21,6 +21,7 @@
     }
     &--warning{
         background-color:orange;
+        color:#000;
     }
     &--danger{
         background-color:red;
