@@ -31,4 +31,13 @@
         font-size: 30px;
     }
 
+    &--submit{
+        background-color: blue;
+    }
+
+    &--cancel{
+        color:  blue;
+        text-decoration: none;
+        font-weight: 800;
+    }
 }

@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="sass/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
     <title>BEM Excercise</title>
 </head>
 <body>
@@ -15,5 +16,71 @@
     <button class="btn btn--warning btn--large">Warning</button>
     <button class="btn btn--danger">Danger</button>
 
+    <div class="timeline">
+        <div class="timeline__item">
+            <div class="timeline__content timeline__content--success">
+                    12 new users registered
+            </div>
+            <div class="timeline__timestamp">
+                    Just now
+            </div>
+        </div>
+        <div class="timeline__item ">
+            <div class="timeline__content timeline__content--danger">
+                    12 new users registered
+            </div>
+            <div class="timeline__timestamp">
+                    Just now
+            </div>
+        </div>
+
+        <div class="timeline__item ">
+            <div class="timeline__content timeline__content--warning">
+                    12 new users registered
+                    <span class="badge badge--completed">completed</span>
+            </div>
+            <div class="timeline__timestamp">
+                    Just now
+            </div>
+        </div>
+        <div class="timeline__item">
+            <div class="timeline__content timeline__content--info">
+                    12 new users registered <span class="badge badge--settled">settled</span>
+            </div>
+            <div class="timeline__timestamp">
+                    Just now
+            </div>
+        </div>
+    </div>
+
+    <div class="portlet">
+        <div class="portlet__header">
+            <div class="portlet__logo">
+                <i class="far fa-calendar-times"></i>
+            </div>
+            <div class="portlet__title">
+                Portlet Footer
+            </div>
+            <div class="portlet__subtitle">
+                Portlet sub title
+            </div>
+        </div>
+        <div class="portlet__content">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus cumque quod, autem nulla libero repellendus incidunt fugiat! Placeat aut nemo nobis quos, animi nesciunt excepturi illum cupiditate nihil aspernatur modi.
+        </div>
+        <div class="portlet__footer">
+            <div class="portlet__footer-content">
+                Portlet footer:
+            </div>
+            <div class="portlet__footer-buttons">
+                <button class="btn btn--submit">
+                    Submit
+                </button>
+                <span>Or</span>
+                <a href="" class="btn--cancel">Cancel</a>
+            </div>
+
+        </div>
+    </div>
 </body>
 </html>

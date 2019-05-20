@@ -2,6 +2,11 @@
   box-sizing: border-box;
 }
 
+body {
+  font-size: 16px;
+  line-height: 24px;
+}
+
 .btn {
   padding: 10px;
   color: #fff;
@@ -32,6 +37,96 @@
 }
 .btn--large {
   font-size: 30px;
+}
+.btn--submit {
+  background-color: blue;
+}
+.btn--cancel {
+  color: blue;
+  text-decoration: none;
+  font-weight: 800;
+}
+
+.timeline {
+  position: relative;
+}
+.timeline::before {
+  content: "";
+  width: 2px;
+  background-color: #DDD;
+  position: absolute;
+  left: 3px;
+  top: 22px;
+  bottom: 22px;
+}
+.timeline__item {
+  display: flex;
+  padding: 0.5rem 0;
+  line-height: 28px;
+}
+.timeline__content {
+  flex-grow: 1;
+  position: relative;
+  padding-left: 2rem;
+}
+.timeline__content::before {
+  content: "";
+  display: block;
+  width: 0.5rem;
+  height: 0.5rem;
+  border-radius: 0.25rem;
+  background-color: #DDD;
+  position: absolute;
+  left: 0;
+  top: calc(50% - 4px);
+}
+.timeline__content--success::before {
+  background-color: green;
+}
+.timeline__content--warning::before {
+  background-color: orange;
+}
+.timeline__content--danger::before {
+  background-color: red;
+}
+.timeline__content--info::before {
+  background-color: blue;
+}
+
+.badge {
+  padding: 5px;
+  color: #fff;
+  border-radius: 4px;
+}
+.badge--completed {
+  background-color: blue;
+}
+.badge--settled {
+  background-color: red;
+}
+
+.portlet__header {
+  display: flex;
+  border-bottom: 1px solid lightgrey;
+  padding-bottom: 1rem;
+}
+.portlet__header > * {
+  margin-right: 0.5rem;
+}
+.portlet__logo {
+  margin-left: 1rem;
+}
+.portlet__content {
+  margin-top: 1rem;
+  padding-left: 1rem;
+}
+.portlet__footer {
+  margin-top: 1rem;
+  padding-left: 1rem;
+  display: flex;
+}
+.portlet__footer-content {
+  flex-grow: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

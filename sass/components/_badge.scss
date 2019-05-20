@@ -1,0 +1,12 @@
+.badge{
+    padding: 5px;
+    color: #fff;
+    border-radius: 4px;
+
+    &--completed{
+        background-color: blue;
+    } 
+    &--settled{
+        background-color: red;
+    }
+}

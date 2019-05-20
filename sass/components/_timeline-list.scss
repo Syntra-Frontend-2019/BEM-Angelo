@@ -1,0 +1,49 @@
+.timeline{
+    position: relative;
+
+    &::before{
+        content: "";
+        width: 2px;
+        background-color: #DDD;
+        position: absolute;
+        left: 3px;
+        top: 22px;
+        bottom: 22px;
+    }
+
+    &__item{
+        display: flex;
+        padding: .5rem 0;
+        line-height: 28px; 
+    }
+
+    &__content{
+        flex-grow: 1;
+        position: relative;
+        padding-left: 2rem;
+
+        &::before{
+            content:"";
+            display: block;
+            width: 0.5rem;
+            height: 0.5rem;
+            border-radius: 0.25rem;
+            background-color: #DDD;
+            position: absolute;
+            left: 0;
+            top: calc(50% - 4px); 
+        }
+        &--success::before{
+            background-color: green;
+        }
+        &--warning::before{
+            background-color: orange;
+        }
+        &--danger::before{
+            background-color: red;
+        }
+        &--info::before{
+            background-color: blue;
+        }
+    }
+}
